@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  body
+    h3
+      form(method='POST', action='send')
+        label(for='name') Name
+        input#name(type='text', name='name')
+        br
+        label(for='email') email
+        input(type='email', name='email', required='')
+        br
+        label(for='subject') Message
+        br
+        textarea#subject(name='message', placeholder='Write something..', style='height:200px;')
+        input(type='submit', value='Submit')
